@@ -3,62 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>İlknur Hançer | Software Engineer</title>
+  <title>İlknur Hançer | Software Engineering Student</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 960px;
       margin: 40px auto;
       padding: 0 20px;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #222;
     }
     h1, h2 {
       color: #111;
+      margin-bottom: 10px;
     }
+    p { margin: 10px 0; }
     a {
       color: #0066cc;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 40px;
+    a:hover { text-decoration: underline; }
+    .section { margin-bottom: 36px; }
+    .meta { color: #444; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid #ddd;
+      border-radius: 999px;
+      margin: 6px 8px 0 0;
+      font-size: 0.95em;
+      color: #333;
     }
     .project {
-      margin-bottom: 20px;
+      margin: 16px 0 22px;
+      padding: 14px 14px;
+      border: 1px solid #eee;
+      border-radius: 10px;
     }
     .project-title {
       font-weight: bold;
+      margin-bottom: 4px;
     }
     .stack {
       color: #555;
       font-size: 0.95em;
+      margin-bottom: 8px;
     }
+    ul { margin: 10px 0 0 20px; }
+    .small { font-size: 0.95em; color: #444; }
   </style>
 </head>
 <body>
 
   <h1>İlknur Hançer</h1>
-  <p>
-    Software Engineering Student (42) <br/>
-    Focus: Systems Programming, NLP, Backend Fundamentals
+  <p class="meta">
+    Software Engineering Student (Expected 2027) • 42 Türkiye Participant • Istanbul, Turkey
   </p>
 
   <p>
-    <a href="https://github.com/ilknurhnc" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com/in/ilknur-hancer-939390268" target="_blank">LinkedIn</a> |
-    <a href="mailto:ilknurhancer5@gmail.com">Email</a>
+    <a href="https://github.com/ilknurhnc" target="_blank" rel="noopener">GitHub</a> |
+    <a href="https://linkedin.com/in/ilknur-hancer-939390268" target="_blank" rel="noopener">LinkedIn</a> |
+    <a href="mailto:ilknurhancer5@gmail.com">ilknurhancer5@gmail.com</a>
   </p>
+
+  <p class="small">
+    This portfolio is published via GitHub Pages and maintained directly from my GitHub profile.
+  </p>
+
+  <div class="section">
+    <h2>Focus</h2>
+    <span class="pill">Systems Programming (C/C++)</span>
+    <span class="pill">Linux & OS Concepts</span>
+    <span class="pill">Process & Memory Management</span>
+    <span class="pill">Concurrency Foundations</span>
+    <span class="pill">Backend & API Basics</span>
+    <span class="pill">MLOps (Learning Path)</span>
+  </div>
 
   <div class="section">
     <h2>About</h2>
     <p>
-      I am a software engineering student at 42 with a strong interest in
-      low-level systems programming and applied machine learning.
-      I enjoy understanding how things work under the hood and building
-      solutions that are technically sound and maintainable.
+      I am a Software Engineering student at Üsküdar University (expected graduation in 2027) and a participant
+      of the 42 Türkiye peer-to-peer software development program. My primary interest is understanding how
+      software behaves close to the system level—especially in environments where performance, reliability,
+      and resource management matter.
+    </p>
+
+    <p>
+      Through 42 projects, I built a strong foundation in C/C++ with hands-on work in process control,
+      memory handling, command parsing, file descriptors, and concurrency primitives. In parallel, I gained
+      practical exposure to backend and API-driven development through internship and applied projects within
+      an Agile/Scrum workflow.
+    </p>
+
+    <p>
+      Going forward, I want to develop a solid MLOps skill set on top of these fundamentals—focusing on
+      model serving, containerization, and cloud-native basics. My goal is to bridge engineering discipline
+      (clean interfaces, observability, reliability) with deployment and lifecycle practices required for
+      real-world ML systems.
+    </p>
+
+    <p>
+      I am currently seeking a part-time student position where I can contribute to real engineering problems,
+      strengthen my technical foundation, and grow in a structured technology environment.
     </p>
   </div>
 
@@ -66,69 +113,81 @@
     <h2>Featured Projects</h2>
 
     <div class="project">
-      <div class="project-title">
-        Suilotion – 42 Hackathon Project
-      </div>
-      <div class="stack">
-        Move (Sui), React, TypeScript
-      </div>
+      <div class="project-title">Minishell (42 Curriculum)</div>
+      <div class="stack">C • Linux • Processes • Pipes/Redirections • Signals</div>
       <p>
-        A decentralized peer-to-peer help platform for 42 students.
-        Includes smart contracts, on-chain identity concepts, and reputation logic.
+        Implemented a simplified Unix shell supporting pipes, redirections, heredoc handling,
+        environment variables, and signal management. Strengthened understanding of process control
+        (fork/exec), file descriptors, parsing, and memory management.
       </p>
-      <a href="https://github.com/sinisterfil/Suilotion" target="_blank">GitHub Repo</a>
+      <a href="https://github.com/ilknurhnc/minishell" target="_blank" rel="noopener">GitHub Repo</a>
     </div>
 
     <div class="project">
-      <div class="project-title">
-        Turkish Movie Sentiment Analyzer (BERT)
-      </div>
-      <div class="stack">
-        Python, PyTorch, Hugging Face
-      </div>
+      <div class="project-title">Cub3D (42 Curriculum)</div>
+      <div class="stack">C • Raycasting • Graphics Math • Game Loop</div>
       <p>
-        Fine-tuned a Turkish BERT model for binary sentiment classification.
-        Focused on dataset preparation, training pipeline, and future deployment readiness.
+        Built a 3D raycasting-based engine inspired by Wolfenstein 3D. Implemented textures, player movement,
+        collision handling, minimap, and wall rendering using raycasting math—improving algorithmic thinking
+        and graphics programming fundamentals.
       </p>
     </div>
 
     <div class="project">
-      <div class="project-title">
-        Minishell (42 Curriculum)
-      </div>
-      <div class="stack">
-        C, Unix, Processes
-      </div>
+      <div class="project-title">Suilotion (42 Hackathon Project)</div>
+      <div class="stack">Sui • Move • React • TypeScript</div>
       <p>
-        Implemented a simplified Unix shell supporting pipes, redirections,
-        environment variables, and signal handling.
+        Hackathon project: decentralized peer-to-peer help concept for 42 students with on-chain mechanics.
+        Contributed to modular smart-contract structure in Move and initial architecture decisions.
       </p>
-      <a href="https://github.com/ilknurhnc/minishell" target="_blank">GitHub Repo</a>
+      <a href="https://github.com/sinisterfil/Suilotion" target="_blank" rel="noopener">GitHub Repo</a>
     </div>
 
     <div class="project">
-      <div class="project-title">
-        Cub3D
-      </div>
-      <div class="stack">
-        C, Raycasting, Graphics Math
-      </div>
+      <div class="project-title">Backend & API Practice (Internship/Practice)</div>
+      <div class="stack">C# • API Design • Data Models • Full-Stack Integration</div>
       <p>
-        A 3D raycasting engine inspired by Wolfenstein 3D.
-        Implemented textures, collision detection, and minimap rendering.
+        Worked on backend-oriented practice repositories and API-driven features, focusing on data models and
+        integration workflows between frontend and backend components.
+      </p>
+      <p class="small">
+        Repos:
+        <a href="https://github.com/ilknurhnc/FindMyTeam" target="_blank" rel="noopener">FindMyTeam</a> •
+        <a href="https://github.com/ilknurhnc/SportAppBackend" target="_blank" rel="noopener">SportAppBackend</a>
       </p>
     </div>
 
   </div>
 
   <div class="section">
-    <h2>Currently Learning</h2>
+    <h2>MLOps Direction (Next Steps)</h2>
     <ul>
-      <li>FastAPI for ML inference services</li>
-      <li>Docker fundamentals</li>
-      <li>Kubernetes basics (local deployments)</li>
+      <li>Serve a minimal inference API (FastAPI) and document the interface clearly.</li>
+      <li>Containerize with Docker (reproducible builds, environment parity, local runbooks).</li>
+      <li>Introduce basic CI checks (lint/test) and versioned releases.</li>
+      <li>Deploy locally on Kubernetes (kind/minikube) to learn rollouts, scaling, and configuration.</li>
+      <li>Add observability basics (structured logging, metrics mindset) to align with production standards.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><b>Üsküdar University</b> — B.Sc. Software Engineering — Expected 2027</li>
+      <li><b>42 Türkiye</b> — Peer-to-peer program: C/C++, Shell, OS concepts, Data Structures, System Programming</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li><b>Programming:</b> C, C++, Java, Shell, Python (foundational)</li>
+      <li><b>Systems:</b> Linux, process management (fork/exec, pipes, signals), memory management basics, concurrency foundations</li>
+      <li><b>Tools:</b> Git/GitHub, VS Code, Docker (learning), Kubernetes (learning)</li>
+      <li><b>Working Style:</b> debugging mindset, clean interfaces, incremental delivery, documentation-first habits</li>
     </ul>
   </div>
 
 </body>
 </html>
+
